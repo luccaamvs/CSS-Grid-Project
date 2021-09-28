@@ -55,6 +55,8 @@
     align-items: center;
     font-size: 1rem;
     margin: 0 0 0 2rem;
+    border-bottom: 1px;
+    border-bottom-style: solid;
 }
 .populares__icone{
     margin-right: 1rem;
