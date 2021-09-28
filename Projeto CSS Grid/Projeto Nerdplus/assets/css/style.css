@@ -1,0 +1,28 @@
+.app {
+    background: #eeeeee;
+    display: grid;  
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 400;
+    /* GridTemplate obrigatorio para o programa entender as separacoes do body  */
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto;
+
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+}
+
+.rodape {
+    background: darkblue;
+    grid-area: rodape;
+}

@@ -1,0 +1,91 @@
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.destaques{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33% 33.33%;
+    height: calc(100% - 50px);
+    padding: 0 2rem 0 2rem;
+}
+.destaques__titulo{
+    background: rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    color: #fdfdfd;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+.destaques__principal {
+    background: url('..//img/main.png')  top / cover no-repeat;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+
+}
+.destaques__secundario:nth-child(2){
+    background: url('..//img/farpas.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+
+}
+.destaques__secundario:nth-child(3){
+    background: url('..//img/Edit.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+.destaques__secundario:nth-child(4){
+    background: url('..//img/prog.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+.destaques__secundario:nth-child(5){
+    background: url('..//img/mayah.png') center / cover no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 3 / 3;
+
+}
+.destaques__secundario{
+    transition: 0.1s
+}
+.destaques__secundario:hover{
+    transform: scale(1.1);
+    border-radius: 1rem;
+}
+.destaques__categorias{
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+.destaques__categorias__lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+#reset{
+    text-decoration: none;
+    color: black;
+}
+.destaques__categorias__item{
+    display: flex;
+    text-transform:uppercase;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    background:rgb(255, 62, 62);
+    border-left:5px solid transparent;
+    color: #fdfdfd;
+    padding: 1rem;
+    width: 50%;
+    transition: 0.3s
+}
+.destaques__categorias__item:hover{
+    font-size: 2rem;     
+    background:rgb(255, 255, 255);
+}
+
+.destaques__categorias__link{
+    color: inherit;
+}
